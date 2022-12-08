@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+.homePage{
+    position: relative;
+    width:100%;
+    height:120vh;
+    background-color:rgb(255,255,243);
+    padding:0 100px;
+    overflow-x: hidden;
+}
+header{
+    position: relative;
+    top:30px;
+    width:100%;
+    height:68px;
+    background-color:#fff;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:0 40px;
+}
+.menu{
+    position: relative;
+    display:flex;
+}
+.menu .logo{
+    font-size:16px;
+    font-weight:900;
+    text-transform: capitalize;
+    color:#262626;
+    text-decoration:none;
+    cursor: pointer;
+}
+.menu .logo span{
+    color:rgb(231,77,21);
+}
+.menu ul{
+    position: relative;
+    left:12vh;
+    display:flex;
+}
+.menu ul li{
+    list-style:none;
+}
+.menu ul li a{
+    text-decoration:none;
+    font-size:16px;
+    font-weight:600;
+    color:#262626;
+    text-transform: capitalize;
+    margin:0 16px;
+    cursor: pointer;
+    transition:0.3s;
+}
+.menu ul li a:hover{
+    color:rgb(231,77,21);
+}
+.socialIcon i{
+    position: relative;
+    margin:0 6px;
+    font-size:16px;
+    font-weight:500;
+    color:#5c5b5b;
+    transform:translateY(0px);
+    cursor: pointer;
+    transition:0.5s;
+}
+.socialIcon i:hover{
+    transform:translateY(-5px);
+    color:rgb(231,77,21);
+}
+.homeContent{
+    position: relative;
+    top:125px;
+    display:flex;
+}
+.contentInfo h1{
+    font-size:3rem;
+    font-weight:700;
+    color:#494949;
+    line-height:1.2;
+}
+.contentInfo p{
+    font-size:20px;
+    font-weight:500;
+    color:#626161;
+    line-height:1.5;
+    padding:12px 0;
+}
+.contentInfo .contentBtn{
+    position: relative;
+    left:-5px;
+    top:20px;
+}
+.contentInfo .contentBtn button{
+    position: relative;
+    padding:15px 30px;
+    border:none;
+    font-size:16px;
+    font-weight:700;
+    text-transform: capitalize;
+    color:#fff;
+    border-radius:8px;
+    margin:0 5px;
+    cursor: pointer;
+    transition:0.3s;
+    transform:translateY(0px);
+}
+.contentInfo .contentBtn button:hover{
+    transform:translateY(-5px);
+}
+.contentInfo .contentBtn .btn01{
+    background-color:#f78b77;
+}
+.contentInfo .contentBtn .btn02{
+    background-color:#fab758;
+}
+.homeImg{
+    position: absolute;
+    right:-25vh;
+    top:-5vh;
+}
+.homeImg img{
+    width:75%;
+}
+.servicePage{
+    position: relative;
+    width:100%;
+    height:45vh;
+    background-color:#fff;
+    padding:0 100px;
+}
+.serviceBoxes{
+    position: relative;
+    top:-25vh;
+    display:flex;
+}
+.serviceBox{
+    position: relative;
+    width:300px;
+    height:360px;
+    background-color:rgb(255,255,255);
+    padding:40px 40px;
+    margin:0 8px;
+    border-bottom-left-radius:12px;
+    border-bottom-right-radius:12px;
+    cursor: pointer;
+    transition:0.5s;
+    transform:translateY(0px);
+}
+.serviceBox:hover{
+    transform:translateY(-5px);
+}
+.serviceBox::before{
+    position: absolute;
+    content:"";
+    left:0;
+    bottom:0;
+    width:100%;
+    height:8px;
+    background-color:#fee9cd;
+    border-bottom-left-radius:12px;
+    border-bottom-right-radius:12px;
+}
+.serviceBoxes .serviceBox02::before{
+    background-color:#c7ede3;
+}
+.serviceBoxes .serviceBox03::before{
+    background-color:#fddcd6;
+}
+.serviceBoxes .serviceBox04::before{
+    background-color:#c5d7f6;
+}
+.serviceBox img{
+    width:25%;
+}
+.serviceBox h2{
+    font-size:20px;
+    font-weight:700;
+    padding:12px 0;
+    text-transform: capitalize;
+    color:rgb(68,67,67);
+}
+.serviceBox p{
+    font-size:16px;
+    line-height:1.8;
+}
+.serviceBox a{
+    position: relative;
+    top:12px;
+    font-size:16px;
+    font-weight:600;
+    color:#fab758;
+    text-transform: capitalize;
+    text-decoration:none;
+}
+.serviceBoxes .serviceBox02 a{
+    color:#45c4a0;
+}
+.serviceBoxes .serviceBox02 a::before{
+    background-color:#45c4a0;
+}
+
+.serviceBoxes .serviceBox03 a{
+    color:#f78b77;
+}
+.serviceBoxes .serviceBox03 a::before{
+    background-color:#f78b77;
+}
+.serviceBoxes .serviceBox04 a{
+    color:#3f78e0;
+}
+.serviceBoxes .serviceBox04 a::before{
+    background-color:#3f78e0;
+}
+.serviceBox a::before{
+    position: absolute;
+    content:"";
+    left:0;
+    bottom:-5px;
+    width:0%;
+    height:1px;
+    background-color:#fab758;
+    transition:0.3s;
+}
+.serviceBox a:hover::before{
+    width:100%;
+}
+.serviceBox a i{
+    position: relative;
+    font-size:12px;
+    left:3px;
+}
+.processPage{
+    position: relative;
+    width:100%;
+    height:115vh;
+    background-color:#fff;
+    padding:0 100px;
+}
+.processContent{
+    position: relative;
+    display:flex;
+}
+.processImg{
+    position: relative;
+    top:95px;
+}
+.processImg img{
+    width:80%;
+}
+.processDetils{
+    position: absolute;
+    top:12vh;
+    right:8vh;
+}
+.processDetils h2{
+    font-size:2rem;
+    font-weight:600;
+    color:#363535;
+    padding:20px 0;
+}
+.processBoxes{
+    position: relative;
+}
+.processBox{
+    position: relative;
+    display:flex;
+    margin:8px 0;
+}
+.processBox .serial{
+    position: relative;
+    width:40px;
+    height:40px;
+    background-color:#f78a773c;
+    border-radius:50%;
+    line-height:40px;
+    text-align:center;
+}
+.processBox .serial span{
+    font-size:18px;
+    font-weight:900;
+    color:#f78b77;
+}
+.processInfo{
+    position: relative;
+    left:16px;
+    top:8px;
+}
+.processInfo h3{
+    font-size:20px;
+    font-weight:700;
+    color:#363535;
+    text-transform: capitalize;
+}
+.processInfo p{
+    font-size:16px;
+    font-weight:500;
+    color:#6c6b6b;
+    padding:12px 0;
+    line-height:1.8;
+}
+.reasonPage{
+    position: relative;
+    width:100%;
+    height:100vh;
+    background-color:#fff;
+    padding:0 100px;
+    overflow-x: hidden;
+}
+.reasonContent{
+    position: relative;
+    top:120px;
+    display:flex;
+}
+.reasonInfo h1{
+    font-size:2.8rem;
+    font-weight:700;
+    color:#343434;
+    line-height:1.2;
+}
+.reasonInfo p{
+    position: relative;
+    left:-10px;
+    top:20px;
+    font-size:18px;
+    font-weight:600;
+    text-transform: capitalize;
+    color:#383838;
+    margin:16px 0;
+}
+.reasonInfo p i{
+    font-size:14px;
+    color:#f78b77;
+    margin:0 10px;
+}
+.reasonImg{
+    position: absolute;
+    right:-25vh;
+    top:-5vh;
+}
+.reasonImg img{
+    width:75%;
+}
+.workPage{
+    position: relative;
+    width:100%;
+    height:150vh;
+    background-color:rgb(255,255,243);
+    padding:0 100px;
+    overflow-x:hidden;
+}
+.workInfo{
+    position: relative;
+    top:20vh;
+    display:flex;
+}
+.wiBox h1{
+    font-size:3rem;
+    font-weight:700;
+    color: #494949;
+    line-height:1.2;
+}
+.wiBox p{
+    font-size:20px;
+    font-weight:500;
+    color:#626161;
+    line-height:1.5;
+    padding:12px 0;
+}
+.complatedBoxes{
+    position: absolute;
+    top:12vh;
+    right:-5vh;
+    display:flex;
+}
+.completedBox{
+    position: relative;
+    text-align:center;
+    margin:0 12px;
+    width:250px;
+}
+.completedBox img{
+    width:20%;
+}
+.completedBox h1{
+    font-size:45px;
+    font-weight:700;
+    color: #494949;
+}
+.completedBox p{
+    font-size:18px;
+    font-weight:500;
+    color:#626161;
+}
+.teamMembers{
+    position: relative;
+    display:flex;
+    top:30vh;
+}
+.teamBox{
+    position: relative;
+    width:280px;
+    height:380px;
+    background-color:rgb(255,255,255);
+    padding:50px 50px;
+    margin:0 8px;
+    border-bottom-left-radius:12px;
+    border-bottom-right-radius:12px;
+    cursor: pointer;
+    transform:translateY(0px);
+    transition:0.5s;
+}
+.teamBox:hover{
+    transform:translateY(-8px);
+}
+.temaBox3{
+    height:420px;
+}
+.temaBox3{
+    height:400px;
+}
+.teamBox::before{
+    position: absolute;
+    content:"";
+    left:0;
+    bottom:0;
+    width:100%;
+    height:8px;
+    background-color:#fddcd6;
+    border-bottom-left-radius:12px;
+    border-bottom-right-radius:12px;
+}
+.teamBox .starIcon i{
+    color:rgb(240,171,34);
+}
+.teamBox p{
+    font-size:16px;
+    padding:15px 0;
+    line-height:1.8;
+}
+.teamBox h2{
+    font-size:20px;
+    font-weight:700;
+    color:rgb(68,67,67);
+}
+.teamBox a{
+    font-size:16px;
+    font-weight:500;
+    color:#5b5b5b;
+    text-decoration:none;
+    padding:8px 0;
+}
+.protfolioPage{
+    position: relative;
+    width:100%;
+    height:185vh;
+    background-color:#fff;
+}
+.protfolioContent{
+    position: relative;
+    padding:40px 100px;
+}
+.protfolioTitle{
+    position: relative;
+    top:15vh;
+}
+.protfolioTitle h1{
+    font-size:2.5rem;
+    font-weight:700;
+    color:#464646;
+    padding:12px 0;
+}
+.protfolioTitle p{
+    font-size:23px;
+    font-weight:500;
+    color:#686767;
+    padding:12px 0;
+}
+.protfolioBoxes{
+    position: relative;
+    left:-35px;
+    top:25vh;
+    display:flex;
+    flex-wrap: wrap;
+}
+.protfolioBox{
+    position: relative;
+    width:500px;
+    height:540px;
+    margin:0 35px;
+    cursor: pointer;
+}
+.protfolioBox .protfoioImg{
+    position: relative;
+    width:500px;
+    height:410px;
+    overflow:hidden;
+}
+.protfolioBox .protfoioImg img{
+    width:100%;
+}
+.protfolioBox .protfolioInfo{
+    position: relative;
+    top:3vh;
+}
+.protfolioBox .protfolioInfo .subtitle{
+    position: relative;
+    left:35px;
+    text-transform: uppercase;
+    font-size:16px;
+    font-weight:600;
+    color:#a07cc5;
+}
+.protfolioBox .protfolioInfo .subtitle::before{
+    position:absolute;
+    content:"";
+    left:-30px;
+    top:50%;
+    width:20px;
+    height:2px;
+    background-color:#a07cc5;
+}
+.protfolioBox .protfolioInfo p{
+    font-size:23px;
+    font-weight:700;
+    color:#000;
+    padding:4px 0;
+}
+.protfolioBoxes .protfolioBox02{
+    position: absolute;
+    top:-35vh;
+    left:90vh;
+}
+.protfolioBoxes .protfolioBox03{
+    position: absolute;
+    top:48vh;
+    left:90vh;
+}
+.protfolioBoxes .protfolioBox03 .protfolioInfo{
+    position: relative;
+    top:-8vh;
+}
+.contactPage{
+    position: relative;
+    width:100%;
+    height:110vh;
+    background-color:rgb(255,255,243);
+    padding:0 100px;
+    overflow-x:hidden;
+}
+.contactContent{
+    position: relative;
+    top:15vh;
+    display:flex;
+}
+.contactImg{
+    position: relative;
+    top:10vh;
+}
+.contactImg img{
+    width:75%;
+}
+.contactInfo{
+    position: absolute;
+    right:12vh;
+    top:12vh;
+}
+.contactInfo h1{
+    font-size:2rem;
+    font-weight:700;
+    color:#494949;
+}
+.mainAddress{
+    position: relative;
+    top:5vh;
+}
+.mainAddress .address{
+    position: relative;
+    display:flex;
+}
+.addressIcon{
+    position: relative;
+}
+.addressIcon i{
+    font-size:20px;
+    color:#f78b77;
+}
+.addressInfo{
+    position: relative;
+    top:-25px;
+    left:25px;
+    margin:12px 0;
+}
+.addressInfo h3{
+    font-size:20px;
+    color:#373737;
+    padding:8px 0;
+}
+.addressInfo p{
+    font-size:18px;
+    font-size:500;
+    color:#494949;
+}
+.footerPage{
+    position: relative;
+    width:100%;
+    height:60vh;
+    background-color:#fff;
+    padding:0 100px;
+    top:60px;
+}
+.footerContent{
+    position: relative;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    top:60px;
+}
+.footerContent p{
+    font-size:18px;
+    margin:8px 0;
+    color:#6d6d6d;
+}
+.footerContent .footerIcon{
+    position: relative;
+    top:12px;
+}
+.footerContent .footerIcon i{
+    font-size:20px;
+    margin:0 8px;
+}
+.twitter{
+    color: #5daed5;
+}
+.facebook{
+    color: #4470cf;
+}
+.behance{
+    color: #d53581;
+}
+.instagram{
+    color: #c8312b;
+}
